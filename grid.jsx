@@ -1,7 +1,7 @@
-// studioASK
+// ASKproduKtion.com
 
-var folderPath = "~/ASKproduKtion Dropbox/scripting ops/_files"; // Set the folder path
-var folder = new Folder(folderPath); // Create a Folder object for the folder
+var folderPath = "~/ASKproduKtion Dropbox/scripting ops/_files"; // set the folder path
+var folder = new Folder(folderPath); // create a Folder object for the folder
 
 const numFrames = 9; // set number of frames in grid
 const aspectRatioXY = 1/1; // set aspect ratio of grid
@@ -9,14 +9,14 @@ var numRows = Math.sqrt(numFrames/aspectRatioXY);
 var numColumns = numRows * aspectRatioXY;
 var askDoc1 = app.documents.add(2160*numColumns, 2160*numRows);
 
-if (folder.exists) { // Check if the folder exists
-  var files = folder.getFiles(); // Get an array of File objects for the files in the folder
+if (folder.exists) { // check if the folder exists
+  var files = folder.getFiles(); // get an array of File objects for the files in the folder
 
   for (var i = 0; i < numFrames; i++) {
     var file = files[i];
 
-    if (file instanceof File && file.hidden == false && file.name[0] != '.') { // Check if the file is a regular file (not a folder or hidden file)
-      // Do something with the file
+    if (file instanceof File && file.hidden == false && file.name[0] != '.') { // check if the file is a regular file (not a folder or hidden file)
+      // place the asset on grid
       var askDoc2 = app.open(file);
         askDoc2.artLayers["Layer 1"].copy();
         askDoc2.close();
