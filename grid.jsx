@@ -1,4 +1,7 @@
-// ASKproduKtion.com
+// https://ASKproduKtion.com
+// Copyright (c) 2023 >> Andrew S Klug // ASKproduKtion
+// Licensed under the Apache License, Version 2.0 (the "License"); this file may not be used except in compliance with the License, a copy of which is available at http://www.apache.org/licenses/LICENSE-2.0
+// Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 var folderPath = "~/ASKproduKtion Dropbox/scripting ops/_files"; // set the folder path
 var folder = new Folder(folderPath); // create a Folder object for the folder
